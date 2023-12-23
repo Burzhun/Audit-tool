@@ -1,0 +1,21 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "type": "node",
+        "request": "launch",
+        "name": "Debug UI Tests",
+        "program": "${workspaceRoot}/tests/node_modules/.bin/jest",
+        "cwd": "${workspaceRoot}/tests",
+        "args": ["--i", "--config", "tests/jest.config.js"]
+      },
+      {
+        "type": "node",
+        "request": "launch",
+        "name": "Debug API Tests",
+        "program": "${workspaceRoot}/tests/node_modules/.bin/jest",
+        "cwd": "${workspaceRoot}/tests",
+        "args": ["--i", "--config", "tests/jest.integration.config.js"]
+      }
+    ]
+  }

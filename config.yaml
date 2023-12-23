@@ -1,0 +1,15 @@
+mongo:
+  host: __mongodb_hosts__
+  database: __mongodb_database__
+  username: __mongodb_username__
+  password: __mongodb_password__
+
+aws:
+  key: __aws_key__
+  secret: __aws_secret__
+port: __port__
+auth_secret: __auth_secret__
+log_file: __log_file__
+react_app_backend_url: __backend_url__
+react_app_prod: __app_prod__
+frontend_url: __frontend_url__

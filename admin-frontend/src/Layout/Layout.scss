@@ -1,0 +1,36 @@
+.layout {
+  .main-header {
+    background-color: #002540;
+    color: #fff;
+    height: 100px;
+    padding: 0 20px;
+    overflow: hidden;
+    .header-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 100%;
+      width: 100%;
+      .header-left-group, .header-right-group {
+        display: flex;
+        align-items: center;
+      }
+      .header-item {
+        margin: 20px;
+        font-size: 16px;
+        line-height: 1;
+      }
+      .logo {
+        max-height:100%;
+        width: auto;
+      }
+    }
+  }
+  .content{
+    margin-top: 40px;
+
+    .main_page_container{
+      width: 1400px;
+    }
+  }
+}

@@ -1,0 +1,75 @@
+version: '2'
+services:
+    web:
+        image: nginx:latest
+        container_name: "nginx"
+        ports:
+            - "80:80"
+            - "443:443"
+            - "4000:4000"
+            - "9000:9000"
+        volumes:
+            - ./site.conf:/etc/nginx/conf.d/default.conf
+            - /data/certs:/data/certs
+        links:
+            - front
+        networks:
+            - bridge
+    front:
+        image: front
+        restart: always
+        build:
+          context: ./
+          dockerfile: dockerfile_front
+        container_name: "front"
+        ports:
+            - "3000:3000"
+        env_file:
+          .env
+        links:
+            - back
+        networks:
+          - bridge
+    back:
+        image: back
+        build:
+          context: ./
+          dockerfile: dockerfile_back
+        container_name: "back"
+        env_file:
+          .env
+        ports:
+            - "4001:4001"
+        # links:
+        #     - mongodb
+        networks:
+          - bridge
+        volumes:
+          - ./certs:/app/certs
+    # mongodb:
+    #     image: mongo:3.6.5
+    #     container_name: "mongodb"
+    #     environment:
+    #       - MONGO_DATA_DIR=/data/db
+    #       - MONGO_LOG_DIR=/dev/null
+    #       - MONGODB_USER="app"
+    #       - MONGODB_PASS="IR1ZHp5qExT19iX"
+    #     volumes:
+    #       - /data/db:/data/db
+    #     networks:
+    #          - bridge
+    #     ports:
+    #         - 27017:27017
+
+networks:
+  bridge:
+    driver: bridge
+    ipam:
+     config:
+       - subnet: 172.12.0.0/16
+         gateway: 172.12.0.1
+         aux_addresses:
+           web: 172.12.0.5
+           front: 172.12.0.2
+           back: 172.12.0.4
+           # mongodb: 172.12.0.3

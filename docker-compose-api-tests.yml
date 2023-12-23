@@ -1,0 +1,14 @@
+version: "2"
+services:
+  api:
+    command: /bin/sleep infinity
+    build:
+      context: .
+    volumes:
+      - ./tests/reports:/opt/app/tests/reports
+      - ${SSHKEY}:/root/.ssh/id_rsa
+    environment:
+      - WIDTH=1440
+      - HEIGHT=1080
+      - IS_HUB=1
+      - HUB_HOST=http://selenium-hub.fxcintel.com:4444/wd/hub

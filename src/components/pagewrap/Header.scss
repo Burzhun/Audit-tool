@@ -1,0 +1,49 @@
+$color-navyblue: #1d4354;
+$color-staging: #dd4354;
+$color-green: #37a000;
+$color-white: #ffffff;
+
+.main_header{
+	position: relative;
+	z-index: 1;
+	height: 100px;
+
+	display: flex;
+	justify-content: space-between;
+	padding: 30px 20px 20px 30px;
+
+	background-color: $color-navyblue;
+}
+
+.menuLink{
+	font-size: 15px;
+	margin-right: 20px;
+	color: $color-white;
+	cursor: pointer;
+}
+.menuLink:hover{
+	color: $color-green;
+}
+
+.menuText{
+	font-size: 15px;
+	color: $color-white;
+	margin-right: 20px;
+}
+
+.menuLinkContainer{
+	display: flex;
+	margin-top:15px;
+}
+
+.logo {
+	cursor: pointer;
+	color: #37a000;
+	height: 72px;
+	width: 432px;
+	background-image: url("./fxcbi_logo_final.svg");
+}
+
+.staging {
+	background-color: $color-staging;
+}

@@ -1,0 +1,1 @@
+[{"_id":{"$oid":"5daa087ed28a65776b0d2f1b"},"UserId":{"$numberInt":"1"},"FirstName":"Mat","LastName":"Boros","RegisteredDate":"2019-10-11","LastSuccessfulLogin":{"$date":{"$numberLong":"1571426951002"}},"RegisteredUserEmail":"mboros@fxcintel.com","Password":"123"}]

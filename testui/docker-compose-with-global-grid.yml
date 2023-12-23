@@ -1,0 +1,8 @@
+version: '2'
+services:
+  pytests:
+    container_name: selenium_pytests
+    command: /bin/sleep infinity
+    build: .
+    volumes:
+      - ./:/opt/app/

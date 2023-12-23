@@ -1,0 +1,10 @@
+.side-select {
+  &.disabled {
+    pointer-events: none;
+    color: #bbb;
+  }
+  margin-left: 0;
+}
+.ui.grid.side-select{
+  margin-left: 1rem;
+}

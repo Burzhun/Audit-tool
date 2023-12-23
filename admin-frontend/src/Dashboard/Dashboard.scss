@@ -1,0 +1,110 @@
+.dashboard {
+  .ui.segment.segment-dropdown {
+    padding: 0;
+    border: none;
+  }
+  .ui.search.selection.dropdown-main {
+    line-height: 1.3em;
+    & > .dropdown.icon {
+      line-height: 1.5em;
+    }
+    & > input.search {
+      line-height: 1.3em;
+    }
+  }
+  .ui.segment.action-buttons {
+    .ui.button {
+      margin-right: 14px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+  .ui.grid {
+    & > .row.checkbox-row {
+      padding-bottom: 0;
+    }
+  }
+  .ui.segment.segment-group-header {
+    font-weight: bold;
+  }
+  p.label-centered {
+    font-weight: bold;
+    text-align: center;
+  }
+  
+}
+.validator_fields_filter{
+  width:100%;
+  input{
+    border-bottom: none;
+  }
+}
+.validators_container{
+  border: 1px solid rgba(34,36,38,.15); 
+  padding: 15px;
+  &.fields_list{
+    max-height: 400px;
+    overflow-y: scroll;
+    div{
+      cursor: pointer;
+      font-size: 16px;
+      margin-bottom: 5px;
+      padding: 4px 0px;
+    }
+    div.selected{
+      display: inline-block;
+      width: 100%;
+      background-color: #dcdbdb;
+      margin-left: -15px;
+      padding-left: 15px;
+    }
+  }
+  &.values_list{
+    div{
+      margin-bottom: 15px;
+
+    }
+    .values_column{
+      font-size: 15px;
+      margin-left: 20px;
+    }
+    .names_column{
+      display: inline-block;
+      font-size: 17px;
+      width: 123px;
+    }
+    .dropdown{
+      max-height: 10px;
+      font-size: 14px;
+    }
+    .constraint_key{
+      display: inline-block;
+    }
+    .constraint_value{
+      display: inline-block;
+      margin-left:15px;
+    }
+    .validator_remove_button{
+      margin-left:20px;
+      height: 40px;
+      vertical-align: top;
+    }
+  }  
+  .json_toggle{
+    float: right;
+
+    div.checkbox{
+      display: inline-block;
+      margin: 0;
+    }
+    span{
+      vertical-align: top;
+    }
+  }
+  .validator_json_textarea{
+    min-width: 500px;
+    font-size: 16px;
+  }
+}
+

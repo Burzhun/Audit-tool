@@ -1,0 +1,29 @@
+{
+  "devDependencies": {
+    "@fxc/ui-test-framework": "https://nexus.fxcintel.net/repository/npm-fxc/@fxc/ui-test-framework/-/ui-test-framework-0.1.61.tgz",
+    "browserstack-local": "^1.4.8"
+  },
+  "dependencies": {
+    "canvas": "^2.8.0",
+    "lodash": "^4.17.21"
+  },
+  "scripts": {
+    "test_integration": "node node_modules/jest/bin/jest.js --detectOpenHandles --reports='jest-unit' --config jest.integration.config.js --forceExit src/specs/integration",
+    "test_integration_business_rules": "node node_modules/jest/bin/jest.js --detectOpenHandles --reports='jest-unit' --config jest.integration.config.js --forceExit src/specs/integration/business_rules/business.rules.spec.js",
+    "test_integration_single": "node node_modules/jest/bin/jest.js --detectOpenHandles --reports='jest-unit' --config jest.integration.config.js --forceExit src/specs/integration/audit/audit.spec.js",
+    "test_integration_global_updates": "node node_modules/jest/bin/jest.js --detectOpenHandles --reports='jest-unit' --config jest.integration.config.js --forceExit src/specs/integration/global_updates",
+    "test_ui": "node node_modules/jest/bin/jest.js --detectOpenHandles --reports='jest-unit' --config jest.config.js --forceExit src/specs/ui",
+    "test_ui_single": "node node_modules/jest/bin/jest.js --detectOpenHandles --reports='jest-unit' --config jest.config.js --forceExit src/specs/ui/login.spec.js",
+    "test_doc": "node setDocs.js"
+  },
+  "jest-junit": {
+    "suiteName": "jest tests",
+    "outputDirectory": "./reports",
+    "outputName": "junit.xml",
+    "uniqueOutputName": "false",
+    "classNameTemplate": "{classname}-{title}",
+    "titleTemplate": "{classname}-{title}",
+    "ancestorSeparator": " ",
+    "usePathForSuiteName": "true"
+  }
+}

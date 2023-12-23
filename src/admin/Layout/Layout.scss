@@ -1,0 +1,46 @@
+.layout {
+  .main-header {
+    background-color: #002540;
+    color: #fff;
+    height: 100px;
+    padding: 0 20px;
+    overflow: hidden;
+    .header-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 100%;
+      width: 100%;
+      .header-left-group, .header-right-group {
+        display: flex;
+        align-items: center;
+      }
+      .header-item {
+        margin: 20px;
+        font-size: 16px;
+        line-height: 1;
+      }
+      .logo {
+        cursor: pointer;
+        color: #37a000;
+        height: 72px;
+        width: 432px;
+        background-image: url("./fxc_logo.svg");
+      }
+      .portal-link{
+        color:white;
+      }
+    }
+  }
+  .main-header.staging{
+    background-color: #dd4354;
+
+  }
+  .content{
+    margin-top: 40px;
+
+    .main_page_container{
+      width: 1400px;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+node_modules/
+.idea
+server/node_modules
+server/.env
+build
+data/
+certs/
+site.conf
+.env
+*.env
+server/log.txt
+server/logs.txt
+*/junit.xml
+junit.xml

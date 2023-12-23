@@ -1,0 +1,319 @@
+#root .layout {
+    max-width: 100vw;
+}
+.layout .row {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.segment-dropdown {
+    .ui.search.selection.dropdown-collection {
+        display: inline-block;
+    }
+    & > .custom_label {
+        display: inline-block;
+        margin: 0 10px;
+        & > span {
+            display: inline-block;
+            margin: 0 5px;
+        }
+    }
+}
+.user_type_selector {
+    display: inline-block;
+    overflow: hidden;
+
+    /* float: left; */
+
+    position: absolute;
+    left: 3vw;
+
+    span {
+        display: block;
+        cursor: pointer;
+        margin: 5px;
+        padding: 3px;
+        font-size: 16px;
+        text-align: center;
+    }
+    span.selected {
+        background-color: #e4e4e4;
+        cursor: unset;
+    }
+}
+@media only screen and (max-width: 1620px) {
+    .user_type_selector {
+        left: auto;
+        position: relative;
+        span {
+            display: inline-block;
+        }
+    }
+}
+
+.dashboard {
+    .ui.segment.segment-dropdown {
+        padding: 0;
+        border: none;
+    }
+    .ui.search.selection.dropdown-main {
+        line-height: 1.3em;
+        & > .dropdown.icon {
+            line-height: 1.5em;
+        }
+        & > input.search {
+            line-height: 1.3em;
+        }
+    }
+    .ui.segment.action-buttons {
+        .ui.button {
+            margin-right: 14px;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+    .ui.grid {
+        & > .row.checkbox-row {
+            padding-bottom: 0;
+        }
+    }
+    .ui.segment.segment-group-header {
+        font-weight: bold;
+    }
+    p.label-centered {
+        font-weight: bold;
+        text-align: center;
+    }
+}
+.validator-fields-filter {
+    width: 100%;
+    input {
+        border-bottom: none;
+    }
+}
+.api-names-column {
+    display: inline-block;
+    font-size: 17px;
+    width: 150px;
+    text-align: left;
+    position: relative;
+    top: 20px;
+    margin-left: 20px;
+}
+.api_update_column {
+    margin-left: 10px;
+    top: 20px;
+    position: relative;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+
+    .ui.button {
+        display: inline-block;
+        width: 112px;
+    }
+}
+.validators-container,
+.charts-container {
+    border: 1px solid rgba(34, 36, 38, 0.15);
+    padding: 15px;
+    &.fields-list {
+        max-height: 400px;
+        overflow-y: auto;
+        div {
+            cursor: pointer;
+            font-size: 16px;
+            margin-bottom: 5px;
+            padding: 4px 0px;
+        }
+        div.selected {
+            display: inline-block;
+            width: 100%;
+            background-color: #dcdbdb;
+            margin-left: -15px;
+            padding-left: 15px;
+        }
+        div.empty {
+            color: #8080808c;
+        }
+        div.not_in_data {
+            color: red;
+        }
+        div.no_type {
+            color: #d4d40a;
+        }
+        div.repeated {
+            text-decoration: underline;
+        }
+    }
+    &.values-list {
+        div {
+            margin-bottom: 15px;
+        }
+        .values-column {
+            font-size: 15px;
+            margin-left: 20px;
+        }
+        .names-column {
+            display: inline-block;
+            font-size: 17px;
+            width: 123px;
+        }
+        .dropdown {
+            max-height: 100%;
+            font-size: 14px;
+        }
+        .constraint-key {
+            display: inline-block;
+        }
+        .constraint-value {
+            display: inline-block;
+            margin-left: 15px;
+            vertical-align: top;
+        }
+        .validator-remove-button {
+            margin-left: 20px;
+            height: 40px;
+            vertical-align: top;
+        }
+        .validator_datatypes_table {
+            max-width: 300px;
+            margin-top: 0 !important;
+            float: right;
+            border-top: none;
+        }
+        .validator_datatypes_table.ui.table td,
+        .validator_datatypes_table.ui.table th {
+            padding: 5px 15px;
+        }
+    }
+    .json-toggle {
+        float: right;
+
+        div.checkbox {
+            display: inline-block;
+            margin: 0;
+        }
+        span {
+            vertical-align: top;
+        }
+    }
+    .validator-json-textarea {
+        min-width: 500px;
+        font-size: 16px;
+    }
+}
+.business_rule_labels span {
+    display: block;
+}
+.business_rule_labels {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.confidence_update_column {
+    margin-left: 10px;
+    top: 20px;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+
+    .ui.input {
+        width: 250px;
+    }
+
+    .ui.selection {
+        min-width: 250px;
+    }
+    .removeBtn {
+        width: 15px;
+        display: inline-block;
+        min-width: unset;
+        padding: 7px 13px;
+        font-size: 22px;
+        position: relative;
+        top: 3px;
+        left: 19px;
+        text-align: center;
+        padding-right: 26px;
+    }
+}
+.scoretext_column {
+    margin-left: 10px;
+    top: 20px;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+
+    .ui.input {
+        width: 650px;
+    }
+}
+.score-names-column {
+    display: inline-block;
+    font-size: 17px;
+    width: 250px;
+    text-align: left;
+    position: relative;
+    top: 20px;
+    margin-left: 20px;
+}
+.image_settings {
+    .ui.checkbox {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+.ui.selection.dropdown.compare_field_selector.values-column {
+    width: 200px;
+    margin: 0;
+
+    .visible.menu {
+        width: 400px;
+    }
+}
+span.compare_field_selector.values-column {
+    width: 500px;
+    display: inline-block;
+}
+.ui.checkbox.business_rule_checkbox {
+    min-width: 200px;
+}
+.validator_values_selector {
+    display: inline-block;
+    max-width: 130px;
+}
+.validator_values_selector .ui.selection.dropdown {
+    min-width: 120px;
+}
+.validator_constraints_key_values {
+    width: 329px;
+}
+
+.user_panel_row {
+    border-bottom: 1px solid #2f2f2f4f;
+    padding-bottom: 10px;
+    overflow: hidden;
+    margin-bottom: 0;
+}
+
+.charts-container.values-list .names-column {
+    vertical-align: top;
+}
+
+.configuration_logs_link {
+    text-align: center;
+    font-size: 16px;
+    color: black;
+}
+.configuration_logs_link a {
+    color: black;
+    text-decoration: underline;
+}

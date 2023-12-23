@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+$color-navyblue: #1d4354;
+$color-green: #37a000;
+$color-white: #ffffff;
+* {
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  height: 100%;
+  display: grid;
+  font-family: Roboto;
+}
+
+.container {
+  margin-top: 40px;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 40px;
+  justify-content: center;
+  max-width: none;
+  width: calc(100vw - 85px);
+}
+
+/* Dialog Box Style */
+
+.popup-content {
+  border-radius: 12px;
+  width: 90% !important;
+}
+
+.dialogContainer {
+  margin: 15px;
+  position: relative;
+}
+
+.css-1ijg0h6 {
+  margin: auto;
+}
+
+Button .blue {
+  background-color: $color-navyblue;
+}
+
+Button .green {
+  background-color: $color-green;
+}
+
+.search_input_field {
+  margin-left: 20px;
+}
+
+.ui.searchBtn.blue {
+  margin: 0 5px;
+}
+
+.search_add_field {
+  width: 40px;
+  height: 38px;
+  margin-left: 10px !important;
+  padding: 0 !important;
+  font-size: 20px !important;
+  position: relative;
+  top: 2px;
+}
+
+.tableRow.clicked td {
+  background-color: #c8c8c8;
+}
+
+.between_sign_text {
+  padding: .67857143em 1em;
+}
+
+.react-resizable {
+
+}
+
+.react-resizable-handle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  bottom: 0;
+  right: 5px;
+  background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/Pg08IS0tIEdlbmVyYXRvcjogQWRvYmUgRmlyZXdvcmtzIENTNiwgRXhwb3J0IFNWRyBFeHRlbnNpb24gYnkgQWFyb24gQmVhbGwgKGh0dHA6Ly9maXJld29ya3MuYWJlYWxsLmNvbSkgLiBWZXJzaW9uOiAwLjYuMSAgLS0+DTwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DTxzdmcgaWQ9IlVudGl0bGVkLVBhZ2UlMjAxIiB2aWV3Qm94PSIwIDAgNiA2IiBzdHlsZT0iYmFja2dyb3VuZC1jb2xvcjojZmZmZmZmMDAiIHZlcnNpb249IjEuMSINCXhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbDpzcGFjZT0icHJlc2VydmUiDQl4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjZweCIgaGVpZ2h0PSI2cHgiDT4NCTxnIG9wYWNpdHk9IjAuMzAyIj4NCQk8cGF0aCBkPSJNIDYgNiBMIDAgNiBMIDAgNC4yIEwgNCA0LjIgTCA0LjIgNC4yIEwgNC4yIDAgTCA2IDAgTCA2IDYgTCA2IDYgWiIgZmlsbD0iIzAwMDAwMCIvPg0JPC9nPg08L3N2Zz4=');
+  background-position: bottom right;
+  padding: 0 3px 3px 0;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  box-sizing: border-box;
+  cursor: se-resize;
+}
+
+.remove_field_button {
+  padding-left: 0px;
+  top: 0px;
+  position: absolute;
+  display: inline-block;
+  right: 0;
+}
+
+.dashboard_table_header {
+  margin-top: 14px;
+}
+
+.image_buttons .button {
+  margin-right: 15px;
+}
+
+.search_filter {
+  margin-top: 10px;
+  display: flex;
+  margin-left: -35px;
+  align-items: center;
+}
+
+.search_filter .red {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  padding: 0;
+}
+
+.yellow, .ui.sortable.table thead th.yellow {
+  background-color: #ffffbf;
+}
+
+.tui-image-editor-container .tui-image-editor-wrap {
+  max-height: calc(100% - 150px);
+  overflow-y: auto;
+}
+
+.updated_data_cell .ui.selection.dropdown {
+  min-width: auto;
+}
+
+.middle_field {
+  padding: 8px;
+  border-top: 1px solid #959595;
+  position: relative;
+}
+
+.middle_field:last-child {
+  border-bottom: 1px solid #959595;
+
+}
+
+.stretched.twelve.wide.column {
+  width: 75% !important;
+}
+
+.middle_field span {
+  display: inline-block;
+  width: 50%;
+  padding-left: 8px;
+}
+
+.middle_field b {
+  display: inline-block;
+  overflow-x: hidden;
+  width: 50%;
+  font-weight: 900;
+  font-size: 15px;
+}
+
+.middle_field .divider {
+  position: absolute;
+  left: 50%;
+  border-right: 1px solid black;
+  height: 100%;
+  top: 0;
+}
+
+.image_loader {
+  padding-left: calc(50% - 64px);
+}
+
+.ui.dropdown.timezone_picker {
+  min-height: 25px;
+  height: 34px;
+  margin-top: 3px;
+  min-width: 101px !important;
+}
+
+.fieldInputHidden {
+  height: 30px;
+  position: absolute;
+  visibility: hidden;
+  width: 0;
+  display: inherit;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.log_row{
+  margin-bottom: 5px;
+  font-size: 15px;
+}
+
+.profile_form_row{
+  margin-bottom: 10px;
+}

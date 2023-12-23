@@ -1,0 +1,46 @@
+const mongoose = require("mongoose");
+const Config = require("./config");
+var Schema = mongoose.Schema;
+
+const customConfig = {
+    RegisteredUserEmail: { type: String },
+    CollectionRelevantFor: { type: String },
+    DefaultFieldsToDisplayInAuditSession: { type: Array, default: [] },
+    DefaultFieldsToDisplayInSearchResultView: { type: Array, default: [] },
+    DefaultNestedFieldsSearch: { type: Array },
+    FieldsToDisplayOnMiddleScreen: { type: Array },
+    DefaultSearchFieldName: { type: String },
+    UnEditableFields: { type: Array },
+    SearchFieldNames: { type: Array },
+    UnDisplayableFields: { type: Array },
+    user_functions: { type: Object },
+    Validators: { type: Array },
+    global_automatic_updates: { type: Array },
+    update_logics: { type: Array },
+    api_updates: { type: Array },
+    updates_manual_overwrite_fields: { type: Array },
+    ib_api_auto_update: { type: Object },
+    ConfidenceScores: { type: Object },
+    add_new_record: { type: Object },
+    image_edit_options: { type: Object },
+    s3_bucket_name: { type: String },
+    s3_folder_name: { type: String },
+    ImageFieldNames: { type: Array },
+    AllowImageAndPdfDownloads: { type: Boolean },
+    allow_image_file_upload: { type: Object },
+    BusinessRules: { type: Object },
+    FloatDisplayPrecision: { type: Object },
+    ExternalUsersQuery: { type: Object },
+    DisplayImages: { type: Boolean },
+    AllowCopyFunction: { type: Boolean },
+    AuditDropdownVisible: { type: Boolean },
+    ComplexFields: { type: Array },
+    DefaultSortings: { type: Array },
+    TableSettings: { type: Array },
+    image_upload_destination: { type: Object },
+    Visibility: { type: Object },
+    CopyToText: { type: Object },
+    table_column_sizes: { type: Array },
+};
+
+module.exports = mongoose.model("UserCustomConfigurations", customConfig, "UserCustomConfigurations");

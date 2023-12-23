@@ -1,0 +1,6 @@
+.side-select {
+  &.disabled {
+    pointer-events: none;
+    color: #bbb;
+  }
+}

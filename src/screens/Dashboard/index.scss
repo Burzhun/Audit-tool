@@ -1,0 +1,83 @@
+.tableRow {
+  cursor: pointer;
+}
+
+.tableRow:hover {
+  font-weight: 900;
+}
+
+.searchBtn {
+  width: 80px;
+}
+
+.ui.button.searchBtnNested {
+  width: 15px;
+    padding: 5px 10px;
+    text-align: center;
+    padding-right: 19px;
+}
+
+.filterInput {
+  width: 100%;
+}
+
+.addSelect {
+  margin-right: 5px;
+}
+
+.addFieldButton {
+  height: 38px;
+  vertical-align: top !important;
+}
+
+.table {
+  margin-top: 5px !important;
+}
+
+.search-with-btn {
+  margin-left: 10px;
+}
+.serach-input{
+  display: inline-block;
+
+}
+.ui.button.globalUpdateButton{
+  vertical-align: top;
+  margin-left: 30px;
+}
+
+.pagination{
+  margin-top: 20px;
+  margin-bottom: 0;
+  display: inline-block;
+}
+.pagination .previous.disabled, .pagination .next.disabled{
+  display: none;
+}
+.pagination li {
+  display: inline-block;
+  border:1px solid black;
+  border-right:none;
+  background-color: rgba(0,0,50,.02);
+  cursor:pointer;
+}
+ul.pagination{
+  display: inline-block;
+
+}
+.pagination li a{
+  padding: 8px 12px;
+  outline: none;
+}
+
+.pagination li:last-child{
+  border-right:1px solid black;
+}
+.pagination li.active{
+  color:white;
+  background-color: #2185d0;
+}
+.redo.icon{
+  margin-left: 15px;
+  cursor: pointer;
+}

@@ -1,0 +1,19 @@
+.side-select {
+  .ui.segment.select-buttons {
+    padding: 0;
+    border: none;
+    display: inline-block;
+    .ui.button.select-button {
+      padding-left: 0;
+      padding-right: 0;
+      &:first-child {
+        padding-left: 20px;
+        padding-right: 10px;
+      }
+      &:last-child {
+        padding-right: 20px;
+        padding-left: 10px;
+      }
+    }
+  }
+}

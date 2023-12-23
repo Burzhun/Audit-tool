@@ -1,0 +1,17 @@
+{
+  "env": {
+    "node": true,
+    "commonjs": true,
+    "es6": true
+  },
+  "ignorePatterns": [
+    "node_modules/"
+  ],
+  "extends": [
+    "airbnb-base"
+  ],
+  "rules": {
+    "operator-linebreak": ["error", "after", { "overrides": { "?": "before", ":": "before" } }],
+    "no-plusplus": "off"
+  }
+}
